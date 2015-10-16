@@ -204,3 +204,4 @@ class PluginStore(object):
         for plugin_info in plugins:
             if plugin_info.name == name:
                 return plugin_info
+        raise PluginError("Plugin '%s' not found!" % name)
